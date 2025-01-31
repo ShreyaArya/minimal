@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Shreya Arya</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Shreya Arya</h1>
+        <p>Hans Rademacher Instructor of Mathematics</p>
+        <p>University of Pennsylvania</p>
+        <p>Contact me at <a href="mailto:smarya@upenn.edu">smarya@upenn.edu</a></p> 
+        <p>Office Address: DRL 3N8D</p>
+        <img src="stylesheets/shreyapic.jpg" height="3cm" width="3cm">
+      </header>
+
+      <section id="home">
+        <p>Welcome to my homepage. I recently obtained my Ph.D. in Mathematics at <a href="https://math.duke.edu/">Duke University</a> with <a href="https://sayanmuk.github.io/">Sayan Mukherjee</a> and <a href="https://services.math.duke.edu/~ezra/">Ezra Miller</a>.</p>
+        <p>I am interested in geometry, topology, and category theory and their applications to statistics, computer science, and mathematical physics.</p>
+        <p>You can find my thesis <a href="https://dukespace.lib.duke.edu/items/ca28a156-2cb1-45b6-a621-97cb24281c85">here</a>. It was awarded the Rudin Prize for Outstanding PhD Dissertation at Duke University.</p>
+      </section>
+
+      <section id="research">
+        <h2>Research</h2>
+        <ul>
+          <li>A., Coraglia, North, O'Connor, Tenorio, H. Riess, Fuzzy Type Theory, 2023.</li>
+          <li>A., Justin Curry, Sayan Mukherjee, A Sheaf Theoretic Construction of Shape Space, <a href="https://arxiv.org/abs/2204.09020">arXiv preprint</a>, 2022.</li>
+          <li>A., Auddy, Edmonds, Lim, Memoli, Packer, The Gromov-Wasserstein distance between spheres, 2023, <a href="https://arxiv.org/abs/2306.10586">arXiv preprint</a>.</li>
+        </ul>
+        <h2>Events</h2>
+        <ul>
+          <li><em>November 2023</em> - Invited Speaker at Math Physics Seminar, UC Boulder: "Brownian motion on singular spaces." </li>
+          <li><em>October 2023</em> - Invited Speaker at AATRN: Applied Algebraic Topology Research Network Seminar. (<a href="https://www.youtube.com/watch?v=eg64JeW9vKw">youtube link</a>)</li>
+        </ul>
+      </section>
+
+      <section id="teaching">
+        <h2>Teaching</h2>
+        <p>Besides research, I really value teaching, mentorship, and community in Mathematics.</p>
+        <h4>Current Teaching</h4>
+        <ul>
+          <li><em>Fall 24</em> MATH 3200 - Computer Methods in Mathematical Sciences I, Penn</li>
+          <li><em>Fall 24</em> MATH 1410 - Calculus, Part II, Penn</li>
+        </ul>
+        <h4>Previous Teaching</h4>
+        <ul>
+          <li><em>Spring 24</em> MATH 112L - Calculus 2, Duke</li>
+          <li><em>Summer 22</em> MATH 219 - Multivariable Calculus, Duke</li>
+        </ul>
+      </section>
+
+      <nav class="bottom-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#research">Research & Events</a></li>
+          <li><a href="#teaching">Teaching</a></li>
+        </ul>
+      </nav>
+
+      <footer>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
+</html>
