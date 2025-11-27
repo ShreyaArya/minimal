@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
   <head>
@@ -9,6 +10,28 @@
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <meta name="viewport" content="width=device-width">
     <style>
+      /* Background decoration */
+      body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: -1;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1400' height='900' viewBox='0 0 1400 900'%3E%3C!-- Left side random walk --%3E%3Cpath d='M50,100 L65,130 L45,165 L70,200 L55,240 L80,280 L60,320 L85,360 L65,400 L90,450 L70,500 L95,550 L75,600 L100,650 L80,700 L105,750 L85,800' stroke='%23ddd' stroke-width='1.5' fill='none' opacity='0.6'/%3E%3Cpath d='M120,50 L135,90 L115,130 L140,175 L120,220 L145,270 L125,320 L150,370 L130,420 L155,480 L135,540 L160,600 L140,660 L165,720 L145,780 L170,850' stroke='%23e8e8e8' stroke-width='1' fill='none' opacity='0.5'/%3E%3C!-- Left side simplicial complex --%3E%3Cpolygon points='30,250 80,220 70,280' stroke='%23ccc' stroke-width='1' fill='none' opacity='0.4'/%3E%3Cpolygon points='80,220 70,280 120,260' stroke='%23ccc' stroke-width='1' fill='none' opacity='0.4'/%3E%3Cpolygon points='40,450 90,430 85,490' stroke='%23ccc' stroke-width='1' fill='none' opacity='0.35'/%3E%3Cpolygon points='90,430 85,490 130,470' stroke='%23ccc' stroke-width='1' fill='none' opacity='0.35'/%3E%3Ccircle cx='30' cy='250' r='3' fill='%23bbb' opacity='0.5'/%3E%3Ccircle cx='80' cy='220' r='3' fill='%23bbb' opacity='0.5'/%3E%3Ccircle cx='70' cy='280' r='3' fill='%23bbb' opacity='0.5'/%3E%3Ccircle cx='120' cy='260' r='3' fill='%23bbb' opacity='0.5'/%3E%3Ccircle cx='40' cy='450' r='2.5' fill='%23bbb' opacity='0.4'/%3E%3Ccircle cx='90' cy='430' r='2.5' fill='%23bbb' opacity='0.4'/%3E%3Ccircle cx='85' cy='490' r='2.5' fill='%23bbb' opacity='0.4'/%3E%3Ccircle cx='130' cy='470' r='2.5' fill='%23bbb' opacity='0.4'/%3E%3C!-- Right side random walk --%3E%3Cpath d='M1350,120 L1335,160 L1355,200 L1330,245 L1350,290 L1325,340 L1345,390 L1320,440 L1340,490 L1315,550 L1335,610 L1310,670 L1330,730 L1305,790 L1325,850' stroke='%23ddd' stroke-width='1.5' fill='none' opacity='0.6'/%3E%3Cpath d='M1280,80 L1265,125 L1285,170 L1260,220 L1280,270 L1255,325 L1275,380 L1250,435 L1270,495 L1245,560 L1265,625 L1240,690 L1260,755 L1235,820' stroke='%23e8e8e8' stroke-width='1' fill='none' opacity='0.5'/%3E%3C!-- Right side simplicial complex --%3E%3Cpolygon points='1370,300 1320,270 1330,330' stroke='%23ccc' stroke-width='1' fill='none' opacity='0.4'/%3E%3Cpolygon points='1320,270 1330,330 1280,310' stroke='%23ccc' stroke-width='1' fill='none' opacity='0.4'/%3E%3Cpolygon points='1360,520 1310,500 1315,560' stroke='%23ccc' stroke-width='1' fill='none' opacity='0.35'/%3E%3Cpolygon points='1310,500 1315,560 1270,540' stroke='%23ccc' stroke-width='1' fill='none' opacity='0.35'/%3E%3Ccircle cx='1370' cy='300' r='3' fill='%23bbb' opacity='0.5'/%3E%3Ccircle cx='1320' cy='270' r='3' fill='%23bbb' opacity='0.5'/%3E%3Ccircle cx='1330' cy='330' r='3' fill='%23bbb' opacity='0.5'/%3E%3Ccircle cx='1280' cy='310' r='3' fill='%23bbb' opacity='0.5'/%3E%3Ccircle cx='1360' cy='520' r='2.5' fill='%23bbb' opacity='0.4'/%3E%3Ccircle cx='1310' cy='500' r='2.5' fill='%23bbb' opacity='0.4'/%3E%3Ccircle cx='1315' cy='560' r='2.5' fill='%23bbb' opacity='0.4'/%3E%3Ccircle cx='1270' cy='540' r='2.5' fill='%23bbb' opacity='0.4'/%3E%3C!-- Top decorations --%3E%3Cpath d='M400,30 L430,45 L410,75 L445,90 L425,120' stroke='%23e0e0e0' stroke-width='1' fill='none' opacity='0.4'/%3E%3Cpath d='M950,25 L970,55 L945,80 L975,105 L955,135' stroke='%23e0e0e0' stroke-width='1' fill='none' opacity='0.4'/%3E%3Cpolygon points='600,20 640,35 620,60' stroke='%23ddd' stroke-width='1' fill='none' opacity='0.3'/%3E%3Cpolygon points='800,30 835,50 815,75' stroke='%23ddd' stroke-width='1' fill='none' opacity='0.3'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 100% auto;
+      }
+      
+      @media (max-width: 960px) {
+        body::before {
+          background-image: none;
+        }
+      }
+
       /* Clean table styling for teaching */
       .teaching-table {
         width: 100%;
@@ -185,7 +208,6 @@
       }
     </style>
   </head>
-  <body>
     <div class="wrapper">
       <header>
         <h1>Shreya Arya</h1>
