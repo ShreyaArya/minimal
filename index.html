@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html>
   <head>
@@ -137,23 +136,62 @@
         margin-top: 25px;
         margin-bottom: 12px;
       }
+      
+      /* Section headings */
+      .section-heading {
+        font-family: 'Georgia', serif;
+        font-size: 22px;
+        font-weight: 600;
+        color: #333;
+        margin-top: 35px;
+        margin-bottom: 18px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #e5e5e5;
+      }
+      
+      /* Navigation */
+      .nav-menu {
+        margin-top: 25px;
+        padding-top: 15px;
+        border-top: 1px solid #e5e5e5;
+      }
+      .nav-menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .nav-menu li {
+        margin-bottom: 8px;
+      }
+      .nav-menu a {
+        color: #555;
+        text-decoration: none;
+        font-size: 13px;
+      }
+      .nav-menu a:hover {
+        color: rgb(122, 10, 10);
+      }
     </style>
   </head>
-  <body>
+ <body>
     <div class="wrapper">
       <header>
         <h1>Shreya Arya</h1>
         <p>Hans Rademacher Instructor of Mathematics</p>
         <p>University of Pennsylvania</p>
-        <p>Contact me at <a href="smarya@upenn.edu">smarya@upenn.edu</a></p> 
-        <p>Office Address: DRL 3N8D</p>
-        <!-- <p class="view"><a href="http://github.com/orderedlist/minimal">View the Project on GitHub <small>orderedlist/minimal</small></a></p>
-        <ul>
-          <li><a href="https://github.com/orderedlist/minimal/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/orderedlist/minimal/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="http://github.com/orderedlist/minimal">Fork On <strong>GitHub</strong></a></li>
-        </ul> -->
-        <img src="stylesheets/shreyapic.jpg" height=”3cm” width=”3cm”>
+        <p>smarya@upenn.edu</p>
+        <p>Office: DRL 3N8D</p>
+        <img src="stylesheets/shreyapic.jpg">
+        
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="#papers">Papers</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="#talks">Talks & Travel</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#other">Other</a></li>
+          </ul>
+        </nav>
       </header>
       <section>
         <!-- <h1>GitHub Flavored Markdown</h1> -->
