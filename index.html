@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
   <head>
@@ -90,6 +91,41 @@
       }
       .paper-abstract.show {
         display: block;
+      }
+      
+      /* Timeline styling */
+      .timeline {
+        position: relative;
+        margin-left: 20px;
+        padding-left: 25px;
+        border-left: 2px solid #e0e0e0;
+      }
+      .timeline-item {
+        position: relative;
+        margin-bottom: 16px;
+      }
+      .timeline-item::before {
+        content: '';
+        position: absolute;
+        left: -31px;
+        top: 6px;
+        width: 8px;
+        height: 8px;
+        background: #999;
+        border-radius: 50%;
+        border: 2px solid #fff;
+      }
+      .timeline-date {
+        font-size: 12px;
+        color: #888;
+        margin-bottom: 2px;
+      }
+      .timeline-content {
+        font-size: 14px;
+        color: #444;
+      }
+      .timeline-content a {
+        color: rgb(122, 10, 10);
       }
       
       /* Section label styling */
@@ -231,7 +267,33 @@
         </div>
 
 
-
+       <h2>Talks</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">March 2025</div>
+            <div class="timeline-content">AMS Southeastern Sectional, Clemson</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">Feb 2025</div>
+            <div class="timeline-content">Geometry-Topology Seminar, Penn</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">Oct 2024</div>
+            <div class="timeline-content">AMS Eastern Sectional, Albany</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">Nov 2023</div>
+            <div class="timeline-content">Math Physics Seminar, UC Boulder</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">Oct 2023</div>
+            <div class="timeline-content"><a href="https://www.youtube.com/watch?v=eg64JeW9vKw">AATRN Seminar</a></div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">April 2023</div>
+            <div class="timeline-content"><a href="https://www.mis.mpg.de/calendar/conferences/2023/shapes.html">Statistics of Shapes</a>, MPI Leipzig</div>
+          </div>
+        </div>
 
         <h2>Events</h2>
           <ul>
